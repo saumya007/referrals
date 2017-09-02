@@ -6,9 +6,7 @@
 <body>
 <script>
     function login(){
-        FB.login(function(response) {
-  // handle the response
-}, {scope: 'public_profile,email'});}
+        
     function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -23,6 +21,9 @@
       // The person is not logged into your app or we are unable to tell.
       document.getElementById('status').innerHTML = 'Please log ' +
         'into this app.';
+        FB.login(function(response) {
+  // handle the response
+}, {scope: 'public_profile,email'});}
     }
   }
     function checkLoginState() {
@@ -34,7 +35,7 @@
   window.fbAsyncInit = function() {
   FB.init({
     appId      : '1949475982004498',
-    //cookie     : true,  // enable cookies to allow the server to access 
+    cookie     : true,  // enable cookies to allow the server to access 
                       // the session
     xfbml      : true,  // parse social plugins on this page
     version    : 'v2.10' // use graph api version 2.8
