@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 </head>
 <body>
-<script>
-    function login(){
-        
+<script>    
     function statusChangeCallback(response) {
     console.log('statusChangeCallback');
     console.log(response);
@@ -60,7 +58,6 @@
         'Thanks for logging in, ' + response.name + '!';
     });
  }
-    }
 </script>
 
 <!--
@@ -71,7 +68,7 @@
 
 
 <div id="status">
-        <a href = "#" onclick="login()"> Click to continue</a>
+        <a href = "#" onclick="checkLoginState()"> Click to continue</a>
 </div>
 
 </body>
