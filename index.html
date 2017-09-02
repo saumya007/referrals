@@ -68,7 +68,7 @@
      console.log('Welcome!  Fetching your information.... ');
      FB.api('/me', function(response) {
        console.log('Good to see you, ' + response.name + '.');
-                 window.location.href = window.location.href+'/'+response.id;
+                 window.location.href = window.location.href+response.id;
 
      });
     } else {
