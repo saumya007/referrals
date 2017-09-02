@@ -6,6 +6,9 @@
 <body>
 <script>
     function login(){
+        FB.login(function(response) {
+  // handle the response
+}, {scope: 'public_profile,email'});}
   window.fbAsyncInit = function() {
   FB.init({
     appId      : '1949475982004498',
@@ -24,7 +27,7 @@
   }(document, 'script', 'facebook-jssdk'));
   
  }
-    }
+    
 </script>
 
 <!--
