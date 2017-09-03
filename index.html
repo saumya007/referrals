@@ -34,6 +34,7 @@
             FB.api('/me', function(response) {
               document.getElementById("hi").innerHtml = response.name;
                document.write(response.name); //get user email
+              console.log("logged " + response.name + "email"+response.email);
           // you can store this data into your database             
             });
 
