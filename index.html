@@ -32,6 +32,7 @@
             user_id = response.authResponse.userID; //get FB UID
 
             FB.api('/me', function(response) {
+              document.getElementById("hi).innerHtml = response.public_profile;
                document.write(response.public_profile); //get user email
           // you can store this data into your database             
             });
@@ -55,7 +56,7 @@
 
 
 <div id="status">
-        <a href = "#" onclick="fb_login()"> Click to continue</a>
+        <a href = "#" onclick="fb_login()" id = "hi"> Click to continue</a>
 </div>
 
 </body>
