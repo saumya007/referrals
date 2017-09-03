@@ -32,7 +32,7 @@
             user_id = response.authResponse.userID; //get FB UID
 
             FB.api('/me', function(response) {
-               document.write(response.email); //get user email
+               document.write(response.public_profile); //get user email
           // you can store this data into your database             
             });
 
