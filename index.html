@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 </head>
 <body>
-  <script src = "//connect.facebook.net/en_US/all.js></script>
+  <script src = "https://connect.facebook.net/en_US/all.js></script>
 <script>   
   window.fbAsyncInit = function() {
   FB.init({
@@ -27,7 +27,7 @@
             user_id = response.authResponse.userID; //get FB UID
 
             FB.api('/me', function(response) {
-                user_email = response.email; //get user email
+               document.write(response.email); //get user email
           // you can store this data into your database             
             });
 
